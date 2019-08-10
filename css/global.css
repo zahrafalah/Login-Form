@@ -1,0 +1,45 @@
+body{
+    background : #fff;
+    padding: 25vh;
+  
+  
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+}
+form{
+    background : #ffff;
+    
+}
+.form-container{
+    border-radius: 10px;
+    padding : 30px;
+    box-shadow: 0 0 10 0;
+}
+.container-fluid{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.btn{
+    font-size: 13px;
+    width: 110px;
+    height: 50px;
+    border-radius: 1px;
+    background-color: rgb(102, 102, 103);
+
+}
+.fas .fa-eye{
+    color: rgb(102, 102, 103);
+    /* font-size:27px; */
+    /* margin-left:8px; */
+  }
+h1{
+    font-size: 2.5rm;
+    font-weight: 500;
+}
+
