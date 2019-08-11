@@ -11,10 +11,6 @@ form{
     background : #ffff;
     
 }
-/* .form-container{
-   
-    padding : 30px;
-} */
 .container-fluid{
     width: 100%;
     padding-right: 15px;
@@ -37,9 +33,15 @@ form{
     /* font-size:27px; */
     /* margin-left:8px; */
   }
-h1{
-    display: block;
-    font-size: 2.5rm;
-    font-weight: 500;
+h1 .h1{
+    display: inline-block;
+    font-size: 2.5rem !important;
+    font-weight: 500 !important;
+    line-height: 1.2 !important;
+}
+#invalid-feedback{
+    color:red;
+    padding: 10px;
+    
 }
 

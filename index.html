@@ -21,20 +21,24 @@
         <div class="row justify-content-center">
             <div class=" col-12 col-sm-6 col-md-3">
                 <div>
-                    <h1 class="mb-3 mt-5 text-black">Dev View</h1>
-                    <form class="form-container">
+                    <h1 class="mb-3 mt-5 h1 text-black">Dev View</h1>
+                    <form class="form-container" >
                         <div class="form-group">
                             <input type="email" class="form-control form-control-lg " id="exampleInputEmail1" 
                              aria-describedby="emailHelp" required>
-                          
+                             
                         </div>
                         <div class="form-group">
                           
                             <input type="password" id="password" name="password" class="form-control"
                                 data-toggle="password" required>
+                                
                         </div>
+                        <div id="invalid-feedback"> <span id="WebPartCaptionWPQ2"></span> </div>
                         <div class="form-group">
-                            <button type="submit" class="btn float-right border border-light text-white" >Login</button>
+                            <button  id ="submit"
+                            class="btn float-right border border-light text-white" 
+                            >Login</button>
                         </div>
                     </form>
                 </div>
@@ -43,7 +47,31 @@
     </div>
 
     <script type="text/javascript">
-        $("#password").password('toggle');
+
+        $( "#submit" ).click(function checkForBlank(e) {
+            // e.preventDefault();
+            // var email="example@gmail.com";
+            // var password="123456";
+
+            
+            // console.log("Hey");
+            // if($("#passsword").value === null){
+            //     $("#invalid-feedback span").text("Password required")
+            // }
+            // if(!document.getElementById("exampleInputEmail1").value){
+            //     $("#invalid-feedback span").text("Email required")
+            // }
+
+            if(document.getElementById("exampleInputEmail1").value  &&
+                document.getElementById("password").value ){ 
+                    // console.log("hi");                            
+                $("#invalid-feedback span").text("Authentication Failed")
+                return false;
+            }
+        });
+       
+
+        
 
     </script>
     
